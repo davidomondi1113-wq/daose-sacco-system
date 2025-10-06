@@ -1,0 +1,1423 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.hero {
+  background: url('assets/hero-bg.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  margin: 50px 0 20px;
+  font-weight: bold;
+}
+
+.sticky-social {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 1000;
+}
+
+.sticky-social a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: #0d6efd;
+  margin: 2px 0;
+}
+
+.sticky-social a:hover {
+  background: #0a58ca;
+}
+
+footer {
+  background: #212529;
+  color: #ddd;
+  padding: 30px 20px;
+  text-align: center;
+}
+.branches {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.branch {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.branch h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+/* Register Card Styling */
+.register-card {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: #fff;
+}
+
+.register-card .card-body {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.register-card h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+.register-card label {
+  color: #f8f9fa;
+  font-weight: 500;
+}
+
+.register-card .form-control {
+  border-radius: 8px;
+  border: none;
+}
+
+.register-card .btn {
+  background: #ffc107;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.register-card .btn:hover {
+  background: #ffcd39;
+}
+/* ===========================
+   LOGIN FORM STYLING
+=========================== */
+.login-card {
+    background: linear-gradient(135deg, #3a1c71, #d76d77, #ffaf7b);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 80px auto;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    animation: slideIn 1s ease-in-out;
+}
+
+.login-card h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+}
+
+.login-card input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.login-card input:focus {
+    box-shadow: 0px 0px 10px #fff, 0px 0px 20px #ffaf7b;
+    transform: scale(1.02);
+}
+
+.login-card button {
+    background: #fff;
+    color: #3a1c71;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-card button:hover {
+    background: #ffaf7b;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.extra-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.extra-link a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* ===========================
+   REGISTER (OTP) FORM STYLING
+=========================== */
+.register-card {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    padding: 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    margin: 80px auto;
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.register-card h2 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.register-card input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.register-card input:focus {
+    box-shadow: 0px 0px 12px #fff, 0px 0px 20px #2193b0;
+    transform: scale(1.02);
+}
+
+.register-card button {
+    background: #fff;
+    color: #2193b0;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.register-card button:hover {
+    background: #6dd5ed;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+#finalForm h4 {
+    margin: 15px 0 10px;
+    font-size: 18px;
+    color: #fff;
+}
+
+#finalForm input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+#finalForm button {
+    background: #ff9800;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+#finalForm button:hover {
+    background: #ffb74d;
+    transform: scale(1.05);
+}
+<link rel="stylesheet" href="css/styles.css">
+```)
+
+```css
+/* General Layout */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+/* Card Styling */
+.form-card {
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    border-radius: 15px;
+    padding: 25px;
+    margin: 15px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+.form-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #222;
+}
+
+.form-card input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ff6f61;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff3b2e;
+}
+
+/* Links */
+.forgot-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.forgot-link a {
+    color: #0033cc;
+    text-decoration: none;
+}
+
+.forgot-link a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Password Strength Bar */
+#strengthBar {
+    height: 8px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 5px 0 10px;
+}
+
+#strengthBar div {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+}
+
+#strengthText {
+    font-size: 13px;
+    color: #444;
+}
+/* Background for login page */
+.login-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #764ba2, #6dd5ed, #2193b0);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite;
+    padding: 20px;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card Styling */
+.form-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+.form-card h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Inputs */
+.form-card input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-card input:focus {
+    border-color: #764ba2;
+    box-shadow: 0 0 8px rgba(118,75,162,0.3);
+}
+
+/* Buttons */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff6f61, #ff9966);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Forgot link */
+.forgot-link {
+    margin-top: 10px;
+}
+
+.forgot-link a {
+    color: #2193b0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-link a:hover {
+    text-decoration: underline;
+}
+
+/* Hidden Sections */
+.hidden {
+    display: none;
+}
+
+/* Password Strength Bar */
+#strengthBar {
+    height: 8px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    margin: 5px 0 10px;
+    overflow: hidden;
+}
+
+#strengthBar div {
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    transition: width 0.5s ease, background 0.5s ease;
+}
+
+#strengthText {
+    font-size: 13px;
+    color: #444;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* General Auth Page Styles */
+.auth-body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #4f46e5, #9333ea, #ec4899);
+  padding: 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-container {
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  border-radius: 1.2rem;
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+}
+
+.auth-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.form-label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #374151;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  transition: 0.2s;
+}
+.form-input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 4px #4f46e5;
+}
+
+/* Buttons */
+.btn-primary, .btn-secondary, .btn-accent, .btn-gray {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.9rem;
+  border-radius: 0.6rem;
+  text-align: center;
+  margin-top: 0.3rem;
+  transition: background 0.3s ease-in-out;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4f46e5;
+}
+.btn-primary:hover {
+  background: #4338ca;
+}
+
+.btn-secondary {
+  background: #9333ea;
+}
+.btn-secondary:hover {
+  background: #7e22ce;
+}
+
+.btn-accent {
+  background: #ec4899;
+}
+.btn-accent:hover {
+  background: #db2777;
+}
+
+.btn-gray {
+  background: #6b7280;
+}
+.btn-gray:hover {
+  background: #4b5563;
+}
+
+/* Messages */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.success {
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.info {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 0.7rem;
+}
+
+.timer {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  color: #6b7280;
+}
+
+/* Password strength */
+.strength-wrapper {
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 1rem;
+  height: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+.strength-bar {
+  height: 0.4rem;
+  border-radius: 1rem;
+  width: 0%;
+  background: red;
+  transition: width 0.3s ease-in-out, background 0.3s;
+}
+.hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+/* Hero Section */
+.hero {
+  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+  min-height: 80vh;
+  padding: 80px 0;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6); /* dark overlay */
+}
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Loan Cards */
+.loan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Sticky Social Media */
+.sticky-social {
+  position: fixed;
+  top: 40%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sticky-social a {
+  background: #007bff;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+.sticky-social a:hover {
+  background: #0056b3;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero-about {
+    min-height: 60vh;
+    background: url('assets/about-hero.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+/* Section Headings */
+h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background: #6a11cb;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #2575fc;
+}
+
+/* Team Cards */
+.team-card img {
+    height: 300px;
+    object-fit: cover;
+    transition:
+    /* General Font */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg,#6a11cb,#2575fc);
+  color: white;
+  text-align: center;
+  padding: 100px 0 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  animation: fadeInDown 1s ease-in-out;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInDown { from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+
+/* Hero Buttons */
+.hero .btn {
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.hero .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Loan Cards */
+.loan-card {
+  border: none;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(135deg,#ff758c,#ff7eb3);
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.loan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Section Titles */
+.section-title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  position: relative;
+}
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #6a11cb;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Testimonials */
+blockquote {
+  font-style: italic;
+  background: #f1f1f1;
+  padding: 20px;
+  border-left: 5px solid #6a11cb;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+blockquote:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+/* Sticky Social Icons */
+.sticky-social {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+.sticky-social a {
+  background: #6a11cb;
+  color: white;
+  padding: 10px;
+  margin: 3px 0;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+  transition: background 0.3s;
+}
+.sticky-social a:hover {
+  background: #2575fc;
+}
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    color: white;
+    text-align: center;
+    padding: 100px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease-in-out;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInDown { from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+
+/* Buttons */
+.hero .btn {
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Loan Cards / Info Cards */
+.loan-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.loan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    fon
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    color: white;
+    text-align: center;
+    padding: 100px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease-in-out;
+}
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+@keyframes fadeInDown { from {opacity:0; transform:translateY(-30px);} to {opacity:1; transform:translateY(0);} }
+@keyframes fadeInUp { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+
+/* Section Styling */
+.section {
+    padding: 60px 0;
+}
+.section-light {
+    background: #f1f1f1;
+}
+.section-dark {
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    color: white;
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Cards */
+.card-custom {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+}
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+/* Testimonials */
+blockquote {
+    font-style: italic;
+    background: #fff;
+    padding: 20px;
+    border-left: 5px solid #6a11cb;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+blockquote:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Social Icons */
+.sticky-social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+.sticky-social a {
+    background: #6a11cb;
+    color: white;
+    padding: 10px;
+    margin: 3px 0;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    transition: background 0.3s;
+}
+.sticky-social a:hover { background: #2575fc; }
+/* ===============================
+   GENERAL STYLING
+=============================== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* ===============================
+   NAVBAR
+=============================== */
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link.active {
+    color: #6a11cb !important;
+}
+
+/* ===============================
+   HERO SECTION
+=============================== */
+.hero {
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    color: white;
+    text-align: center;
+    padding: 100px 0 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero .btn {
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeInDown { 
+    from {opacity:0; transform:translateY(-30px);} 
+    to {opacity:1; transform:translateY(0);} 
+}
+
+@keyframes fadeInUp { 
+    from {opacity:0; transform:translateY(30px);} 
+    to {opacity:1; transform:translateY(0);} 
+}
+
+/* ===============================
+   CARDS
+=============================== */
+.card-custom {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   SECTION TITLES
+=============================== */
+.section-title {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #6a11cb;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* ===============================
+   BLOCKQUOTES / TESTIMONIALS
+=============================== */
+blockquote {
+    font-style: italic;
+    background: #f1f1f1;
+    padding: 20px;
+    border-left: 5px solid #6a11cb;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+blockquote:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   BUTTONS
+=============================== */
+.btn-primary {
+    background: #6a11cb;
+    border: none;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background: #2575fc;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: #6c757d;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background: #5a6268;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.btn-info {
+    background: #17a2b8;
+    border: none;
+}
+
+.btn-info:hover {
+    background: #138496;
+    transform: translateY(-2px);
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* ===============================
+   STICKY SOCIAL ICONS
+=============================== */
+.sticky-social {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sticky-social a {
+    background: #6a11cb;
+    color: white;
+    padding: 10px;
+    margin: 3px 0;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.sticky-social a:hover {
+    background: #2575fc;
+    transform: translateX(-2px);
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+/* General Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Main Portal Heading */
+main h2 {
+    font-weight: 700;
+    color: #2575fc;
+}
+
+/* Tabs Styling */
+.nav-tabs .nav-link {
+    font-weight: 600;
+    color: #2575fc;
+    border: 1px solid #2575fc;
+    margin-right: 5px;
+    border-radius: 5px 5px 0 0;
+}
+.nav-tabs .nav-link.active {
+    background-color: #2575fc;
+    color: #fff;
+}
+
+/* Tab Content Area */
+.tab-content {
+    border: 1px solid #dee2e6;
+    border-top: none;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Cards */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-info, .btn-secondary {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.btn-primary:hover, .btn-success:hover, .btn-info:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Savings Table */
+#savingsTable {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+#savingsTable th {
+    background-color: #2575fc;
+    color: #fff;
+}
+#savingsTable td, #savingsTable th {
+    vertical-align: middle;
+}
+
+/* Progress Bars */
+.progress {
+    height: 25px;
+    border-radius: 8px;
+}
+.progress-bar {
+    font-weight: 600;
+    line-height: 25px;
+}
+
+/* Alerts */
+.alert-info {
+    background-color: #e7f3ff;
+    color: #3178c6;
+    border: 1px solid #b6e0fe;
+}
+
+/* Lists in tabs (Statements, News, Governance, Security) */
+.tab-pane ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.tab-pane ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-tabs .nav-link {
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+    .progress {
+        height: 20px;
+    }
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+.topbar {
+  background: #004080;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+
+.topbar nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 20px;
+}
+
+.dashboard .cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recent-transactions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.recent-transactions th, .recent-transactions td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
